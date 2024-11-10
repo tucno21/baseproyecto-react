@@ -1,3 +1,161 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+
+    /* SIDEBAR */
+    .sidebar {
+        @apply fixed top-0 left-0 w-full h-full z-30 flex transition-all duration-300;
+    }
+
+    .sidebar-phone {
+        @apply -translate-x-full md:translate-x-0;
+    }
+
+    .sidebar-15 {
+        @apply md:w-[15rem];
+    }
+
+    .sidebar-3 {
+        @apply md:w-[3.5rem];
+    }
+
+    .sidebar-content {
+        @apply bg-panel-background w-[15rem] h-full md:w-full;
+    }
+
+    .sidebar-logo {
+        @apply text-panel-txt h-14 bg-panel-btn_active flex items-center justify-center gap-2 text-3xl;
+    }
+
+    .sidebar-logo-name {
+        @apply font-bold text-2xl;
+    }
+
+    .nav-list {
+        @apply mt-4 h-full flex flex-col gap-2 overflow-y-auto shadow;
+    }
+
+    .nav-item {
+        @apply relative w-full text-center md:cursor-pointer hover:bg-panel-btn_active;
+    }
+
+    .nav-item.active {
+        @apply bg-panel-btn_active;
+    }
+
+    .link-item {
+        @apply flex items-center px-4 py-2 gap-3 text-panel-txt transition-all duration-300;
+    }
+
+    .nav-item.active .link-item {
+        @apply text-panel-txt_active;
+    }
+
+    .item-icon {
+        @apply text-xl;
+    }
+
+    .link-item-dropdown {
+        @apply flex items-center justify-between px-4 py-2 gap-3 text-panel-txt transition-all duration-300;
+    }
+
+    .arrow {
+        @apply ml-auto text-xs transition-all duration-300;
+    }
+
+    .sub-menu {
+        /* @apply w-4/5 ml-auto border-l border-l-panel-txt flex flex-col gap-1 */
+        @apply w-4/5 ml-auto border-l border-l-panel-txt flex flex-col gap-1 overflow-hidden transition-all duration-300;
+    }
+
+    .sub-menu.sm-hidden {
+        @apply max-h-0;
+    }
+
+    .sub-menu:not(.sm-hidden) {
+        @apply max-h-96;
+        /* Ajusta la altura máxima según tus necesidades */
+    }
+
+    .sm-block {
+        @apply max-h-[1000px] opacity-100 visible;
+    }
+
+    .sub-menu-item {
+        @apply text-left hover:bg-panel-btn_active transition-all duration-300;
+    }
+
+    .sub-menu-item a {
+        @apply text-panel-txt px-4 py-2 block;
+    }
+
+    .sub-menu-item.active a {
+        @apply bg-panel-btn_active text-panel-txt_active
+    }
+
+    .sidebar-close {
+        @apply block bg-panel-background opacity-70 w-[calc(100%-15rem)] h-full text-panel-txt px-4 py-2 text-3xl md:hidden;
+    }
+
+    /* PAGE */
+    .container-page {
+        @apply relative bg-surface-100 w-full min-h-screen transition-all duration-300;
+    }
+
+    .page-not-icon {
+        @apply md:left-[15rem] md:w-[calc(100%-15rem)];
+    }
+
+    .page-icon {
+        @apply md:left-[3.5rem] md:w-[calc(100%-3.5rem)];
+    }
+
+    /* MENU SUPERIOR */
+    .navbar-container {
+        @apply fixed z-10 w-full h-[3.5rem] px-4 bg-panel-background flex items-center justify-between shadow-sm transition-all duration-300;
+    }
+
+    .nc-15 {
+        @apply md:w-[calc(100%-15rem)];
+    }
+
+    .nc-3 {
+        @apply md:w-[calc(100%-3.5rem)];
+    }
+
+    .menuBar {
+        @apply text-panel-txt text-lg md:text-2xl transition-all duration-300 hover:text-panel-background hover:bg-panel-txt hover:rounded-sm md:cursor-pointer;
+    }
+
+    .menu-phone {
+        @apply px-2 py-1 md:hidden;
+    }
+
+    .menu-tablet {
+        @apply px-2 py-1 hidden md:block;
+    }
+
+    /* HEADER SIDEBAR - MENU USUARIO */
+    .menu-user {
+        @apply relative z-30;
+    }
+
+    .info-user {
+        @apply text-panel-txt text-xs flex justify-center items-center gap-2 px-2 py-1 rounded-sm md:hover:bg-panel-btn_active md:cursor-pointer;
+    }
+
+    .option-user {
+        @apply absolute z-50 w-40 px-1 bg-white top-12 right-0 border border-solid border-[#c5c6c7] rounded shadow flex flex-col gap-2 py-2 transition duration-200 ease-in-out origin-top;
+    }
+
+    .option-item {
+        @apply flex w-full gap-2 items-center py-1 px-6 text-panel-btn_active md:hover:bg-[#e7e7e7];
+    }
+
+    /* HEADER SIDEBAR - MENU USUARIO */
+    /* MENU SUPERIOR */
+    /* SIDEBAR */
+}
