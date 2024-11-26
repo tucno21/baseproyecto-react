@@ -7,6 +7,9 @@ import { MdOutlineLocalPhone, MdOutlineMailOutline } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
 import errorResponse from "../../utils/errorResponse";
 import apiPrueba from "../../utils/apiPrueba";
+import Seo from "../../components/seo/Seo";
+
+import ogimage from "./../../assets/qricon.png"
 
 interface FormErrors {
     nombre?: string;
@@ -56,21 +59,30 @@ const IndexPage = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <>
+            <Seo
+                title="Voto Electrónico | CodeWeb21"
+                description="Voto Electrónica de Elecciones del Municipio Escolar donde puedes votar con tu DNI, un  sistema seguro y eficiente."
+                keywords="Voto Electrónica, Elecciones del Municipio Escolar, Voto, DNI, Seguridad, Eficiencia, Acceso Solo Presidente de mesa"
+                ogImage={ogimage} // Ajusta según tu necesidad
+            // canonical="https://tudominio.com" // Ajusta según tu necesidad
+            />
+            <div className="flex flex-col justify-center items-center">
 
-            <Link to="/dashboard" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full">Dashboard</Link>
+                <Link to="/dashboard" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full">Dashboard</Link>
 
-            <form onSubmit={handleSubmit} >
-                <div className="flex flex-col gap-y-4 mt-6">
-                    <Input icon={<FaRegCircleUser />} label="Nombre" type="text" name="nombre" value={values.nombre} onChange={handleChange} placeholder="Tu nombre" error={errors.nombre} />
-                    <Input icon={<IoPersonOutline />} label="Apellido" type="text" name="apellido" value={values.apellido} onChange={handleChange} placeholder="Tu apellido" error={errors.apellido} />
-                    <Input icon={<MdOutlineMailOutline />} label="Correo" type="email" name="correo" value={values.correo} onChange={handleChange} placeholder="Tu correo" error={errors.correo} />
-                    <Input icon={<MdOutlineLocalPhone />} label="Telefono" type="number" name="telefono" value={values.telefono} onChange={handleChange} placeholder="Tu telefono" error={errors.telefono} />
-                </div>
+                <form onSubmit={handleSubmit} >
+                    <div className="flex flex-col gap-y-4 mt-6">
+                        <Input icon={<FaRegCircleUser />} label="Nombre" type="text" name="nombre" value={values.nombre} onChange={handleChange} placeholder="Tu nombre" error={errors.nombre} />
+                        <Input icon={<IoPersonOutline />} label="Apellido" type="text" name="apellido" value={values.apellido} onChange={handleChange} placeholder="Tu apellido" error={errors.apellido} />
+                        <Input icon={<MdOutlineMailOutline />} label="Correo" type="email" name="correo" value={values.correo} onChange={handleChange} placeholder="Tu correo" error={errors.correo} />
+                        <Input icon={<MdOutlineLocalPhone />} label="Telefono" type="number" name="telefono" value={values.telefono} onChange={handleChange} placeholder="Tu telefono" error={errors.telefono} />
+                    </div>
 
-                <button type="submit" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-6">Prueba</button>
-            </form>
-        </div>
+                    <button type="submit" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full mt-6">Prueba</button>
+                </form>
+            </div>
+        </>
     )
 }
 
