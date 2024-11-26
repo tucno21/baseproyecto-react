@@ -9,7 +9,6 @@ import errorResponse from "../../utils/errorResponse";
 import apiPrueba from "../../utils/apiPrueba";
 
 interface FormErrors {
-    [key: string]: string | undefined;
     nombre?: string;
     apellido?: string;
     correo?: string;
