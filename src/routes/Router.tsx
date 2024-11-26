@@ -5,7 +5,10 @@ import IndexPage from "../pages/home/IndexPage";
 import PrivateRouteDasboard from "./dashboard/PrivateRouteDasboard";
 import DashboardLayout from "../layout/DashboardLayout";
 import { routesDashboard } from "./dashboard/Routes";
+import { HelmetProvider } from "react-helmet-async";
 
+
+const helmetContext = {};
 
 const router = createBrowserRouter([
     {
@@ -53,7 +56,9 @@ const router = createBrowserRouter([
 
 const Router = () => {
     return (
-        <RouterProvider router={router} />
+        <HelmetProvider context={helmetContext}>
+            <RouterProvider router={router} />
+        </HelmetProvider>
     )
 }
 
