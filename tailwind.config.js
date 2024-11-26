@@ -74,6 +74,59 @@ export default {
           900: "#12191c"
         },
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(0deg, #0c3483 0%, #3d5af1 100%, #6b8cce 0%, #3d5af1 0%)',
+      },
+      boxShadow: {
+        'border': 'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
+        'button': 'rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px',
+        'card': 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px',
+      },
+      dropShadow: {
+        'image': '13px 6px 9px #000',
+        'title': '4px 4px 4px #000000',
+        'border': '4px 4px 3px #000',
+      },
+      fontFamily: {
+        'sans': ['Montserrat', 'Arial', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'nunito': ['Nunito', 'sans-serif'],
+      },
+      keyframes: {
+        shake: {
+          '0%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-10px)' },
+          '50%': { transform: 'translateX(10px)' },
+          '75%': { transform: 'translateX(-10px)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        rotateY: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(360deg)' },
+        },
+        show_toast: {
+          '0%': { transform: 'translateX(100%)' },
+          '40%': { transform: 'translateX(-5%)' },
+          '80%': { transform: 'translateX(3%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        hide_toast: {
+          '0%': { transform: 'translateX(0)' },
+          '40%': { transform: 'translateX(3%)' },
+          '80%': { transform: 'translateX(-5%)' },
+          '100%': { transform: 'translateX(calc(100% + 20px))' },
+        },
+        progress: {
+          '100%': { width: '0%' },
+        }
+      },
+      animation: {
+        shake: 'shake 0.5s ease-in-out',
+        rotateY: 'rotateY 1s ease-in-out forwards',
+        show_toast: 'show_toast 0.3s ease forwards',
+        hide_toast: 'hide_toast 0.3s ease forwards',
+        progress: 'progress 5s linear forwards',
+      }
     },
   },
   plugins: [],

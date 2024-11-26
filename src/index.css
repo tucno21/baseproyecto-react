@@ -158,4 +158,403 @@
     /* HEADER SIDEBAR - MENU USUARIO */
     /* MENU SUPERIOR */
     /* SIDEBAR */
+
+    /* BOTONES */
+    .btn {
+        @apply px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-md focus:outline-none;
+    }
+
+    .btn-sm {
+        @apply px-2 py-1 text-xs font-medium rounded shadow-md focus:outline-none;
+    }
+
+    .btn-primary {
+        @apply text-white bg-primary-500 border-transparent hover:bg-primary-700
+    }
+
+    .btn-success {
+        @apply text-white bg-success-500 border-transparent hover:bg-success-700;
+    }
+
+    .btn-danger {
+        @apply text-white bg-danger-500 border-transparent hover:bg-danger-700;
+    }
+
+    .btn-warning {
+        @apply text-white bg-warning-500 border-transparent hover:bg-warning-700;
+    }
+
+    .btn-info {
+        @apply text-white bg-info-500 border-transparent hover:bg-info-700;
+    }
+
+    .btn-light {
+        @apply text-gray-900 bg-light-500 border-transparent hover:bg-light-700;
+    }
+
+    .btn-dark {
+        @apply text-white bg-dark-500 border-transparent hover:bg-dark-700;
+    }
+
+    .btn-outline-primary {
+        @apply text-primary-500 border border-primary-500 hover:bg-primary-500 hover:text-white focus:outline-none;
+    }
+
+    .btn-outline-warning {
+        @apply text-warning-500 border border-warning-500 hover:bg-warning-500 hover:text-white focus:outline-none;
+    }
+
+    .btn-outline-danger {
+        @apply text-danger-500 border border-danger-500 hover:bg-danger-500 hover:text-white focus:outline-none;
+    }
+
+    .btn-outline-success {
+        @apply text-success-500 border border-success-500 hover:bg-success-500 hover:text-white focus:outline-none;
+    }
+
+    .btn-outline-info {
+        @apply text-info-500 border border-info-500 hover:bg-info-500 hover:text-white focus:outline-none;
+    }
+
+    /* BOTONES */
+
+    /* FORM */
+    .form-label {
+        @apply block mb-1 text-sm font-medium text-surface-800;
+    }
+
+    .form-input {
+        @apply block w-full px-2 py-2 md:py-1.5 text-surface-800 bg-surface-50 text-sm border border-surface-500 rounded focus:outline-none focus:border-surface-900;
+    }
+
+    .input-sm {
+        @apply text-xs;
+    }
+
+    .input-md {
+        @apply text-sm;
+    }
+
+    .input-lg {
+        @apply text-[0.98rem] p-2;
+    }
+
+    .form-input-file {
+        @apply block w-full p-1 text-surface-800 bg-surface-50 sm:text-xs border border-surface-500 rounded focus:outline-none focus:border-surface-900 shadow-sm file:bg-transparent file:border-0 file:rounded file:bg-surface-300 file:mr-4 file:py-1 file:px-4 hover:file:cursor-pointer;
+    }
+
+    .form-icon {
+        @apply absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-surface-700;
+    }
+
+    .input-photo-border {
+        @apply flex justify-center rounded-md border-2 border-dashed border-surface-700/70 py-2;
+    }
+
+    .input-photo-center {
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .input-photo-label {
+        @apply relative cursor-pointer px-3 rounded bg-surface-50 font-medium text-indigo-600 hover:text-panel-txt hover:bg-surface-700;
+    }
+
+    /* FORM */
+
+
+    /* BADGE */
+    .badge {
+        @apply text-xs leading-3 px-[0.6rem] pt-[0.20rem] pb-[0.30rem] rounded-full font-medium mx-0.5 whitespace-nowrap;
+    }
+
+    .badge-sm {
+        @apply text-[0.65rem] leading-3 px-[0.5rem] pt-[0.1rem] pb-[0.2rem] rounded-full font-medium mx-0.5 whitespace-nowrap;
+    }
+
+    .badge-lg {
+        @apply text-sm leading-4 px-[0.7rem] pt-[0.15rem] pb-[0.2rem] rounded-full font-medium mx-0.5 whitespace-nowrap;
+    }
+
+    .badge-primary {
+        @apply text-white bg-primary-500 border-transparent;
+    }
+
+    .badge-success {
+        @apply text-white bg-success-500 border-transparent;
+    }
+
+    .badge-danger {
+        @apply text-white bg-danger-500 border-transparent;
+    }
+
+    .badge-warning {
+        @apply text-white bg-warning-500 border-transparent;
+    }
+
+    .badge-info {
+        @apply text-white bg-info-500 border-transparent;
+    }
+
+    .badge-light {
+        @apply text-gray-900 bg-light-500 border-transparent;
+    }
+
+    .badge-dark {
+        @apply text-white bg-dark-500 border-transparent;
+    }
+
+    .badge-line-primary {
+        @apply text-primary-500 border border-primary-500;
+    }
+
+    .badge-line-success {
+        @apply text-success-500 border border-success-500;
+    }
+
+    .badge-line-danger {
+        @apply text-danger-500 border border-danger-500;
+    }
+
+    .badge-line-warning {
+        @apply text-warning-500 border border-warning-500;
+    }
+
+    .badge-line-info {
+        @apply text-info-500 border border-info-500;
+    }
+
+    .badge-line-dark {
+        @apply text-dark-500 border border-dark-500;
+    }
+
+    /* BADGE */
+
+    /* CARD */
+    .card {
+        @apply w-full rounded bg-white shadow;
+    }
+
+    .card-header {
+        @apply border-b border-b-slate-200 px-4 py-2 sm:px-4;
+    }
+
+    .card-body {
+        @apply p-4 sm:p-5;
+    }
+
+    .card-footer {
+        @apply flex justify-end gap-2 border-t border-slate-200 px-4 py-2 sm:px-4;
+    }
+
+    .card-title {
+        @apply text-lg;
+    }
+
+    .card-subtitle {
+        @apply text-sm text-slate-500;
+    }
+
+    .card-content {
+        @apply text-sm text-slate-600;
+    }
+
+    /* CARD */
+
+
+
+
+    /* DATATABLE */
+    .datatable-container {
+        @apply border border-gray-200 rounded-lg px-3 py-4 bg-white shadow-lg;
+    }
+
+    .datatable-header {
+        @apply flex flex-col md:flex-row justify-between items-center gap-2 mb-2;
+    }
+
+    .datatable-header-input {
+        @apply border border-gray-400 rounded-md px-2 py-1 text-sm focus:outline-none focus:border-gray-600 shadow-sm;
+    }
+
+    .table-container-responsive {
+        @apply overflow-x-auto max-w-[calc(100vw-2.5rem)] rounded shadow-lg;
+    }
+
+    .datatable-table {
+        @apply min-w-full table-fixed border border-gray-300;
+    }
+
+    .datatable-table-thead-tr {
+        @apply bg-gray-200 border-b border-gray-300;
+    }
+
+    .datatable-table-thead-th {
+        @apply px-3 py-2 text-left font-semibold whitespace-nowrap;
+    }
+
+    .datatable-table-tbody {
+        @apply text-gray-700;
+    }
+
+    .datatable-table-tbody-tr {
+        @apply border-b transition duration-300 ease-in-out hover:bg-neutral-100;
+    }
+
+    .datatable-table-tbody-td {
+        @apply px-2 py-0 md:px-3 md:py-1 text-sm md:text-base;
+    }
+
+    .datatable-pagination {
+        @apply flex justify-center mt-4;
+    }
+
+    .table-btn-previous {
+        @apply px-1 ml-0 text-gray-500 bg-white border border-gray-400 rounded-l-lg hover:bg-gray-500 hover:text-gray-200 focus:outline-none cursor-pointer drop-shadow-md;
+    }
+
+    .table-btn-next {
+        @apply px-1 ml-0 text-gray-500 bg-white border border-gray-400 rounded-r-lg hover:bg-gray-500 hover:text-gray-200 focus:outline-none cursor-pointer drop-shadow-md;
+    }
+
+    .table-btn-points {
+        @apply px-2 ml-0 text-gray-500 bg-white border border-gray-400 drop-shadow-md;
+    }
+
+    .table-btn-number {
+        @apply px-2 ml-0 text-gray-500 bg-white border border-gray-400 hover:bg-gray-500 hover:text-gray-200 focus:outline-none cursor-pointer drop-shadow-md;
+    }
+
+    .table-btn-number.active {
+        @apply bg-[#6b7280] text-[#e5e7eb] cursor-default
+    }
+
+    /* DATATABLE */
+
+    /* CHECKET */
+
+    /* RADIO */
+    .radio {
+        @apply relative h-5 w-5 appearance-none border border-gray-500 rounded-full outline-none checked:bg-gray-500
+        /* checked:border-none */
+
+        checked:before:absolute checked:before:content-[''] checked:before:top-2/4 checked:before:left-2/4 checked:before:-translate-x-2/4 checked:before:-translate-y-2/4 checked:before:w-2 checked:before:h-2 checked:before:bg-white checked:before:rounded-full md:hover:cursor-pointer hover:opacity-80 transition duration-100 ease-in-out
+    }
+
+    .radio-xs {
+        @apply w-4 h-4 checked:before:w-1 checked:before:h-1
+    }
+
+    .radio-lg {
+        @apply w-6 h-6
+    }
+
+    /* RADIO */
+
+    /* COLOR-CHECKBOX-RADIO */
+    .box-primary {
+        @apply border-primary-500 checked:border-primary-500 checked:bg-primary-500
+    }
+
+    .box-success {
+        @apply border-success-500 checked:border-success-500 checked:bg-success-500
+    }
+
+    .box-danger {
+        @apply border-danger-500 checked:border-danger-500 checked:bg-danger-500
+    }
+
+    .box-warning {
+        @apply border-warning-500 checked:border-warning-500 checked:bg-warning-500
+    }
+
+    .box-dark {
+        @apply border-dark-500 checked:border-dark-500 checked:bg-dark-500
+    }
+
+    .box-info {
+        @apply border-info-500 checked:border-info-500 checked:bg-info-500
+    }
+
+    /* COLOR-CHECKBOX-RADIO */
+
+
+    /* PANEL BTN */
+    .btn-panel {
+        @apply font-semibold px-2 py-1.5 lg:py-2 lg:px-4 bg-slate-300 text-xl lg:text-3xl rounded-md text-gray-600 focus:text-teal-500
+    }
+}
+
+.check-x {
+    position: relative;
+}
+
+.check-x-text {
+    position: relative;
+}
+
+.check-x::before,
+.check-x::after,
+.check-x-text::before,
+.check-x-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    height: 120%;
+    width: 0.2rem;
+    background-color: #000;
+}
+
+
+.check-x::before {
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
+.check-x::after {
+    transform: translate(-50%, -50%) rotate(-45deg)
+}
+
+.check-x-text::before {
+    transform: translate(-50%, -50%) rotate(80deg);
+    height: 320%;
+}
+
+.check-x-text::after {
+    transform: translate(-50%, -50%) rotate(-80deg);
+    height: 320%;
+}
+
+/* LOADER */
+.loader {
+    --d: 22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #2c1bc2;
+    box-shadow:
+        calc(1*var(--d)) calc(0*var(--d)) 0 0,
+        calc(0.707*var(--d)) calc(0.707*var(--d)) 0 1px,
+        calc(0*var(--d)) calc(1*var(--d)) 0 2px,
+        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+        calc(-1*var(--d)) calc(0*var(--d)) 0 4px,
+        calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+        calc(0*var(--d)) calc(-1*var(--d)) 0 6px;
+    animation: l27 1s infinite steps(8);
+}
+
+@keyframes l27 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+/* BOTONOS PANEL */
+
+.shadow-c {
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.shadow-c:focus {
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
